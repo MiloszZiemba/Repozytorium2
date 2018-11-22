@@ -27,7 +27,7 @@ private slots:
 
     void on_pushButton_close_webcam_clicked();
 
-    void on_pushButton_display_frame();
+    void on_pushButton_display_frame_clicked();
 
     void update_window();
 

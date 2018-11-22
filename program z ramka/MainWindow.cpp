@@ -54,21 +54,59 @@ void MainWindow::on_pushButton_close_webcam_clicked()
     cout << "camera is closed" << endl;
 }
 
-void MainWindow::on_pushButton_display_frame()
+void MainWindow::on_pushButton_display_frame_clicked()
 {
-    ui->label_2->setText("Hello!");
+    ui->label_2->setText("Ciekawe czy działa?");
 
-    VideoCapture stream1(0);
+    VideoCapture Frame(0);
         while(true)
         {
             Mat cameraframe;
-           stream1.read(cameraframe);
-            imshow("Frame",cameraframe);
-            if(waitKey(30) >= 0)
-                break;
+           Frame.read(cameraframe);
+
+
+            CascadeClassifier face_cascade;
+            CascadeClassifier eye_cascade;
+            face_cascade.load("D:\\opencv\\release\\install\\etc\\haarcascades\\haarcascade_frontalface_alt.xml");
+            eye_cascade.load("D:\\opencv\\release\\install\\etc\\haarcascades\\haarcascade_eye.xml");
+                    if(face_cascade.empty())
+                    //if(!face_cascade.load("D:\\opencv\\release\\install\\etc\\haarcascades\\haarcascade_frontalface_alt.xml")
+                    if(eye_cascade.empty())
+                        //if(!eye_cascade.load("D:\\opencv\\release\\install\\etc\\haarcascades\\haarcascade_eye.xml")
+            {
+                cerr<<"ERROR Loading XML file"<<endl;
+
+            }
+            // Detect face
+            std::vector<Rect> face;
+            face_cascade.detectMultiScale(cameraframe, face, 1.1, 2, 0 |CV_HAAR_SCALE_IMAGE, Size(30,30));
+            // Draw circles on the detected face
+            for( int i = 0; i < face.size(); i++ )
+           {
+                Point center( face[i].x + face[i].width*0.5, face[i].y + face[i].height*0.5 );
+                ellipse( cameraframe, center, Size( face[i].width*0.5, face[i].height*0.5), 0, 0, 360, Scalar( 255, 0, 255 ), 4, 8, 0 );
+
+            // Detect eyes
+            Mat faceROI = cameraframe( face[i] );
+            std::vector<Rect> eye;
+            eye_cascade.detectMultiScale(faceROI, eye, 1.1, 2, 0 |CV_HAAR_SCALE_IMAGE, Size(30,30));
+            // Draw circules on detected eye
+            for(int j = 0; j < eye.size(); j++ )
+            {
+                Point center( face[i].x + eye[j].x + eye[j].width*0.5, face[i].y + eye[j].y + eye[j].height*0.5 );
+                int radius = cvRound( (eye[j].width + eye[j].height)*0.25 );
+                circle( cameraframe, center, radius, Scalar( 255, 0, 0 ), 4, 8, 0 );
+
+            }
+          }
+
+            imshow("Detected Face", cameraframe);
+            waitKey(0);
+
+
+
         }
 }
-
 void MainWindow::update_window()
 {
     cap >> frame;
