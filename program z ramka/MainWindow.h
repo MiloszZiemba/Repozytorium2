@@ -29,6 +29,8 @@ private slots:
 
     void on_pushButton_display_frame_clicked();
 
+    void on_pushButton_save_image_clicked();
+
     void update_window();
 
 private:

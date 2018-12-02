@@ -5,7 +5,7 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
-
+#include <QFileDialog>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -101,12 +101,44 @@ void MainWindow::on_pushButton_display_frame_clicked()
           }
 
             imshow("Detected Face", cameraframe);
-            waitKey(0);
+            waitKey();
+
+
+
+
+            QString file_name = QFileDialog::getSaveFileName(this, tr("Save File"),
+                    "D://",
+                    tr("Images (*.png *.jpg)"));
+            //*imageObject = image.toImage();
+            //Mat::frame -> M.save(&file_name, "PNG");
+            VideoCapture Frame(0) -> save(file_name);
 
 
 
         }
 }
+
+void MainWindow::on_pushButton_save_image_clicked()
+{
+
+
+    VideoCapture Frame2(0);
+    Frame2.read(cameraframe2);
+   // Mat frame;
+    //cap >> frame;
+
+    QString file_name = QFileDialog::getSaveFileName(this, tr("Save File"),
+            "D://",
+            tr("Images (*.png *.jpg)"));
+    //*imageObject = image.toImage();
+    //Mat::frame -> M.save(&file_name, "PNG");
+    cameraframe -> save(file_name);
+
+
+
+
+}
+
 void MainWindow::update_window()
 {
     cap >> frame;
