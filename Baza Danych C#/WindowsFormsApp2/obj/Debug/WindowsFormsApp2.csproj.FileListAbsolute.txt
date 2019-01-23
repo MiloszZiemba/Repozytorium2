@@ -1,0 +1,30 @@
+D:\Projekty\Śmietnik\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+D:\Projekty\Śmietnik\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+D:\Projekty\Śmietnik\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+D:\Projekty\Śmietnik\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\System.Data.SQLite.dll
+D:\Projekty\Śmietnik\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\System.Data.SQLite.xml
+D:\Projekty\Śmietnik\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\System.Data.SQLite.dll.config
+D:\Projekty\Śmietnik\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csprojAssemblyReference.cache
+D:\Projekty\Śmietnik\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+D:\Projekty\Śmietnik\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+D:\Projekty\Śmietnik\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+D:\Projekty\Śmietnik\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+D:\Projekty\Śmietnik\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+D:\Projekty\Śmietnik\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+D:\Projekty\Śmietnik\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+D:\Projekty\Śmietnik\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
+D:\Baza Danych C#\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+D:\Baza Danych C#\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+D:\Baza Danych C#\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+D:\Baza Danych C#\WindowsFormsApp2\bin\Debug\System.Data.SQLite.dll
+D:\Baza Danych C#\WindowsFormsApp2\bin\Debug\System.Data.SQLite.xml
+D:\Baza Danych C#\WindowsFormsApp2\bin\Debug\System.Data.SQLite.dll.config
+D:\Baza Danych C#\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csprojAssemblyReference.cache
+D:\Baza Danych C#\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+D:\Baza Danych C#\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
+D:\Baza Danych C#\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+D:\Baza Danych C#\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+D:\Baza Danych C#\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+D:\Baza Danych C#\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+D:\Baza Danych C#\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+D:\Baza Danych C#\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
